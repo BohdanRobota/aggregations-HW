@@ -25,7 +25,7 @@ export const returnCitiesPipeline = [
   },
   {
     $match: {
-      'population_rank': { '$gt': 20, '$lt': 30 }
+      'population_rank': { '$gte': 20, '$lte': 30 }
     }
   }
 ];
